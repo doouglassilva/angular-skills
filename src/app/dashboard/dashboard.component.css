@@ -1,0 +1,21 @@
+/* CSS Personalizado para o Spinner */
+.custom-spinner-container {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    height: 100vh; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8); 
+    z-index: 999; 
+  }
+  
+  
+  .custom-spinner-container mat-progress-spinner {
+    width: 50px; 
+    height: 50px; 
+    color: #2196F3; 
+  }
+  

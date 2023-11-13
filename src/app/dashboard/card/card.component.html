@@ -1,4 +1,4 @@
-<mat-card class="example-card">
+<mat-card class="skill-card">
   <mat-card-header>
     <mat-card-title>{{card.name}}</mat-card-title>
   </mat-card-header>
@@ -9,7 +9,20 @@
     </p>
   </mat-card-content>
   <mat-card-actions>
-    <button mat-button>LIKE {{card.likes}}</button>
-    <button mat-button>SHARE</button>
+    <button  mat-icon-button  
+        (click)="onLike()"
+        [ngClass]="likeButtonColorClass"
+        aria-label="Thumb Up"
+        class="shake-on-hover">
+      <mat-icon>thumb_up</mat-icon>
+      {{card.likes}}
+    </button>
+    <button  mat-icon-button 
+      color="link" 
+      (click)="onShare()" 
+      aria-label="Share"
+      class="shake-on-hover">
+      <mat-icon>share</mat-icon>
+    </button>
   </mat-card-actions>
 </mat-card>
